@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52B6559256569D400BC0A0D /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B6558256569D400BC0A0D /* NetworkDataFetcher.swift */; };
 		C5BBE9C2256426F8000DD6BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBE9C1256426F8000DD6BF /* AppDelegate.swift */; };
 		C5BBE9C4256426F8000DD6BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBE9C3256426F8000DD6BF /* SceneDelegate.swift */; };
 		C5BBE9C6256426F8000DD6BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBE9C5256426F8000DD6BF /* ViewController.swift */; };
 		C5BBE9C9256426F8000DD6BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BBE9C7256426F8000DD6BF /* Main.storyboard */; };
 		C5BBE9CB256426FC000DD6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5BBE9CA256426FC000DD6BF /* Assets.xcassets */; };
 		C5BBE9CE256426FC000DD6BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BBE9CC256426FC000DD6BF /* LaunchScreen.storyboard */; };
+		C5BBE9D725642E09000DD6BF /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBE9D625642E09000DD6BF /* SearchResponse.swift */; };
+		C5BBE9DA256437AF000DD6BF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBE9D9256437AF000DD6BF /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C5BBE9BE256426F8000DD6BF /* AppleMusicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52B6558256569D400BC0A0D /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		C5BBE9BE256426F8000DD6BF /* ItunesAPI_JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesAPI_JSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BBE9C1256426F8000DD6BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5BBE9C3256426F8000DD6BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C5BBE9C5256426F8000DD6BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		C5BBE9CA256426FC000DD6BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5BBE9CD256426FC000DD6BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5BBE9CF256426FC000DD6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5BBE9D625642E09000DD6BF /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		C5BBE9D9256437AF000DD6BF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,7 @@
 		C5BBE9BF256426F8000DD6BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5BBE9BE256426F8000DD6BF /* AppleMusicDemo.app */,
+				C5BBE9BE256426F8000DD6BF /* ItunesAPI_JSON.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +65,8 @@
 				C5BBE9C1256426F8000DD6BF /* AppDelegate.swift */,
 				C5BBE9C3256426F8000DD6BF /* SceneDelegate.swift */,
 				C5BBE9C5256426F8000DD6BF /* ViewController.swift */,
+				C5BBE9DD256438D5000DD6BF /* Network */,
+				C5BBE9DC256438C4000DD6BF /* Models */,
 				C5BBE9C7256426F8000DD6BF /* Main.storyboard */,
 				C5BBE9CA256426FC000DD6BF /* Assets.xcassets */,
 				C5BBE9CC256426FC000DD6BF /* LaunchScreen.storyboard */,
@@ -67,12 +75,29 @@
 			path = AppleMusicDemo;
 			sourceTree = "<group>";
 		};
+		C5BBE9DC256438C4000DD6BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5BBE9D625642E09000DD6BF /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5BBE9DD256438D5000DD6BF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C5BBE9D9256437AF000DD6BF /* NetworkService.swift */,
+				C52B6558256569D400BC0A0D /* NetworkDataFetcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5BBE9BD256426F8000DD6BF /* AppleMusicDemo */ = {
+		C5BBE9BD256426F8000DD6BF /* ItunesAPI_JSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5BBE9D2256426FC000DD6BF /* Build configuration list for PBXNativeTarget "AppleMusicDemo" */;
+			buildConfigurationList = C5BBE9D2256426FC000DD6BF /* Build configuration list for PBXNativeTarget "ItunesAPI_JSON" */;
 			buildPhases = (
 				C5BBE9BA256426F8000DD6BF /* Sources */,
 				C5BBE9BB256426F8000DD6BF /* Frameworks */,
@@ -82,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = AppleMusicDemo;
+			name = ItunesAPI_JSON;
 			productName = AppleMusicDemo;
-			productReference = C5BBE9BE256426F8000DD6BF /* AppleMusicDemo.app */;
+			productReference = C5BBE9BE256426F8000DD6BF /* ItunesAPI_JSON.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C5BBE9B9256426F8000DD6BF /* Build configuration list for PBXProject "AppleMusicDemo" */;
+			buildConfigurationList = C5BBE9B9256426F8000DD6BF /* Build configuration list for PBXProject "ItunesAPI_JSON" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C5BBE9BD256426F8000DD6BF /* AppleMusicDemo */,
+				C5BBE9BD256426F8000DD6BF /* ItunesAPI_JSON */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52B6559256569D400BC0A0D /* NetworkDataFetcher.swift in Sources */,
+				C5BBE9DA256437AF000DD6BF /* NetworkService.swift in Sources */,
+				C5BBE9D725642E09000DD6BF /* SearchResponse.swift in Sources */,
 				C5BBE9C6256426F8000DD6BF /* ViewController.swift in Sources */,
 				C5BBE9C2256426F8000DD6BF /* AppDelegate.swift in Sources */,
 				C5BBE9C4256426F8000DD6BF /* SceneDelegate.swift in Sources */,
@@ -293,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = class.AppleMusicDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = class.ItunesJSON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +340,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = class.AppleMusicDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = class.ItunesJSON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +350,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C5BBE9B9256426F8000DD6BF /* Build configuration list for PBXProject "AppleMusicDemo" */ = {
+		C5BBE9B9256426F8000DD6BF /* Build configuration list for PBXProject "ItunesAPI_JSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5BBE9D0256426FC000DD6BF /* Debug */,
@@ -331,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5BBE9D2256426FC000DD6BF /* Build configuration list for PBXNativeTarget "AppleMusicDemo" */ = {
+		C5BBE9D2256426FC000DD6BF /* Build configuration list for PBXNativeTarget "ItunesAPI_JSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5BBE9D3256426FC000DD6BF /* Debug */,
